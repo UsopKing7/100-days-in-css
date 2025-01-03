@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+}
+
+.contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    background-color: #1b263b;
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(180deg, #00afb9 65%, #00cc33 30%);
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 50%;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    overflow: hidden; /* Para que el pseudo-elemento no sobresalga */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease 1.5s;
+}
+
+.circulo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Inicialmente escondido */
+    transition: transform 2s ease 0.5s; /* Transición suave */
+}
+
+.circulo:hover::before {
+    transform: translate(0px, -0px) scale(1); /* Expande la capa negra al hacer hover */
+}
+
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 60px solid white;
+    position: relative;
+    transition: all 3s ease 0.4s;
+}
+
+.circulo:hover .triangulo {
+    transition: all 3s;
+    border-bottom:  60px solid black;
+}
+
+.sol {
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    background-color: yellow;
+    border-radius: 50%;
+    transition: all 2s ease 0.5s;
+    position: absolute;
+    transform: translateX(-90px);
+}
+
+.circulo:hover .sol {
+    transform: translate(-50%, -50%) translateX(90px);
+    background: black;
+}

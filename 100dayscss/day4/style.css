@@ -1,0 +1,76 @@
+.fondo {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(180deg, #ad2831, #e76f51);
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    position: absolute;
+
+    /* hacer que el div este centradi del primer circulo*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo_1 {
+    border-radius: 50%;
+    transition: all 0.5s ease 1s;
+    width: 0px;
+    height: 0px;
+
+    /* para centrar el segundo div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo:hover .circulo_1 {
+    transition: all 0.5s;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.circulo_2 {
+    border-radius: 50%;
+    transition: all 0.5s ease 0.5s;
+    width: 0px;
+    height: 0px;
+
+    /* para centrar el segundo div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo:hover .circulo_2 {
+    transition: all 0.5s ease 0.5s;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.circulo_3 {
+    border-radius: 50%;
+    transition: all 0.5s;
+    width: 0px;
+    height: 0px;
+
+    /* para centrar el segundo div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo:hover .circulo_3 {
+    transition: all 0.5s ease 1s;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.6);
+}

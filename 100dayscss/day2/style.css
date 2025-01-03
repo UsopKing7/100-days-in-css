@@ -1,0 +1,67 @@
+.contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    background: #06d6a0;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centrar {
+    width: 130px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box {
+    background-color: white;
+    border-radius: 5px;
+    width: 120px;
+    height: 13px;
+    margin: 3px;
+    transition: all 0.1s;
+}
+
+.centrar:hover .box {
+    transition: all 0.5s;
+    background-color: white;
+}
+
+.centrar:hover #box1 {
+    transition: all 1s;
+    transform: translateY(18px);
+}
+
+.centrar:active #box2 {
+    transition: all 0.1s;
+    opacity: 0;
+}
+
+.centrar:hover #box3 {
+    transition: all 1s;
+    transform: translateY(-20px);
+}
+
+.centrar:active #box1{
+    transform: translateY(18px) rotate(140deg);
+}
+
+.centrar:hover #box2 {
+    opacity: 0;
+}
+
+.centrar:active #box3{
+    transform: translateY(-20px) rotate(-140deg);
+}
