@@ -1,128 +1,136 @@
 .contenedor {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    top: 50%;
-    left: 50%;
-    margin-top: -200px;
-    margin-left: -200px;
-    background: linear-gradient(180deg, #fb8500, #ffb703);
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   position: absolute;
+   width: 400px;
+   height: 400px;
+   top: 50%;
+   left: 50%;
+   margin-top: -200px;
+   margin-left: -200px;
+   background: linear-gradient(180deg, #fb8500, #ffb703);
+   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .colum {
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 
 .centro {
-    background-color: white;
-    width: 300px;
-    height: 300px;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.8);
-    align-items: flex-start;
-    display: flex;
+   background-color: white;
+   width: 300px;
+   height: 300px;
+   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.8);
+   align-items: flex-start;
+   display: flex;
 }
 
 .perfil {
-    width: 200px;
-    height: 300px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   width: 200px;
+   height: 300px;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.post, .likes, .follower {
-    width: 100px;
-    height: 98px;
-    margin: 1px;
-    background-color: #e7d7c1;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
+.post,
+.likes,
+.follower {
+   width: 100px;
+   height: 98px;
+   margin: 1px;
+   background-color: #e7d7c1;
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.5s;
 }
 
 b {
-    color: #451e17;
-    margin: -18px;
-    font-size: 25px;
-    transform: translateY(16px);
+   color: #451e17;
+   margin: -18px;
+   font-size: 25px;
+   transform: translateY(16px);
 }
 
 p {
-    transform: translateY(20px);
-    font-size: 10px;
+   transform: translateY(20px);
+   font-size: 10px;
 }
 
-.post:hover, .likes:hover, .follower:hover {
-    background-color: #936639;
+.post:hover,
+.likes:hover,
+.follower:hover {
+   background-color: #936639;
 }
 
 .foto {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    top: 20%;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.3);
+   position: absolute;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   top: 20%;
+   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
 img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
 }
 
 .nombre {
-    top: 180px;
-    width: 200px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+   top: 180px;
+   width: 200px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 .boxs-entrada {
-    position: absolute;
-    top: 250px;
-    width: 150px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+   position: absolute;
+   top: 250px;
+   width: 150px;
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
 }
 
-.box-follower, .box-mensaje {
-    margin: 5px;
-    width: 130px;
-    height: 22px;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.5s;box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.6);
+.box-follower,
+.box-mensaje {
+   margin: 5px;
+   width: 130px;
+   height: 22px;
+   border: 1px solid black;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: all 0.5s;
+   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
+
 .boton-1 {
-    transform: translateY(-1px);
-    font-size: 15px;
-    transition: all 0.5s;
+   transform: translateY(-1px);
+   font-size: 15px;
+   transition: all 0.5s;
 }
 
-.box-follower:hover, .box-mensaje:hover {
-    background-color: #540b0e;
+.box-follower:hover,
+.box-mensaje:hover {
+   background-color: #540b0e;
 }
 
 .boton-1:hover {
-    color: white;
+   color: white;
 }
